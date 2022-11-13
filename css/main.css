@@ -13,19 +13,19 @@ html, body { height: 100% }
 
 body { 
   font-family: sans-serif;
-  background-color: black;
+  background-color: #4A4C4E;
   color: white;
 }
 
 /* main header rules */
 header {
-    background-color: #4A4C4E;
+    background-color: white;
     position: sticky;
     top: 0;
     text-align: center;
 }
 
-#main-logo { width: 300px; padding: 10px 0; }
+#main-logo { width: 250px; padding: 10px 0; }
 
 /* main rules here */
 #character_nav {
@@ -135,18 +135,29 @@ footer {
     left: 0;
 
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url("../images/genji.png");
+    background-image: url("../images/genjibg.webp");
     background-repeat: no-repeat;
 
-    background-size: 55vh; /* 55% of the viewport height */
-    background-position: 40px bottom;
+    background-size: 75vh; /* 55% of the viewport height */
+    background-position: 0px bottom;
 
     z-index: 5000;
 
     display: none;
 }
 
-#lightbox2 { background-image: url('../images/Thor_LB_Bg.png'); }
+#lightbox2 { 
+    background-image: url('../images/reaperbg.png')
+}
+
+#lightbox3 {
+    background-image: url('../images/reinbg.png');
+}
+
+#lightbox4 {
+    background-image: url("../images/soldierbg.png");
+    background-size: 60vh; /* 55% of the viewport height */
+}
 
 .lightbox_close {
     position: relative;
@@ -161,7 +172,7 @@ footer {
     font-weight: bolder;
 }
 
-.lightbox_close:hover { opacity: 0.5; color: red; }
+.lightbox_close:hover { opacity: 0.5; color: #FA9C1D; }
 
 .lightbox article {
     width: 55%;
